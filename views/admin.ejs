@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="/sty/style1.css" rel="stylesheet" type="text/css" />
+  
+    
+</head>
+<body>
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>
+<H1> قائمة الحجوزات المقبلة</H1>
+<table class="table-1">
+    
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+        
+    <% for(var i=0; i< clients.length; i++){ %>
+    <tr class="row">
+    <td>
+            <li class="item"> <%= clients[i].id %>     </li>
+    </td>
+
+    <td>
+            <li class="item"> <%= clients[i].name %> </li>    
+    </td>
+
+    <td>
+            <li class="item"> <%= clients[i].date.split("-").reverse().join("-"); %> </li>
+        </td>
+
+    <td>
+            <li class="item"> <%= clients[i].tel %> </li>    
+        </td>
+    <td>
+            <li class="item"> <%= clients[i].email %> </li>   
+        </td>
+
+    <td>
+            <li class="item" id="del-btn-a">  <a href="/delete/<%= clients[i].id %>" id="<%= clients[i].id %>" type="button" onclick="myFunction(id)">Delete</a>  </li>
+        </td>
+
+    <td>
+            <li class="item" id="del-btn-b">  <a href="/user-edit/<%= clients[i].id %>" id="<%= clients[i].id %>" type="button" onclick="myFunction(id)">Edit</a>  </li>
+    </td>
+
+    </tr>
+    <%  } %> 
+
+    
+</table>
+
+
+
+  <script>
+
+  </script>
+</body>
+</html>

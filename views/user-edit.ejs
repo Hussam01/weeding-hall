@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="resForm">
+
+        <!--name, email, phone number, date , -->
+        <form class="rForm" action="/update" method="POST">
+            <input type="hidden" value="<%= clients.id %>" name="id">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="<%= clients.name %>" placeholder="الاسم ">
+        
+            
+
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" value="<%= clients.email %>" placeholder="عنوان بريدك الالكتروني">
+
+            <label for="tel">telephone</label>
+            <input type="tel" name="phone" value="<%= clients.tel %>" placeholder="رقم الجوال">
+
+            <label for="date">Date</label>
+            <input type="date" id="rDate" name="date" value="<%= clients.date %>" min="2020-01-01" placeholder="تاريخ الحجز">
+        
+            <input class="s-btn" type="submit" value="Submit" name="submit">
+        
+        </form>
+
+    </div>
+<script>
+    
+    document.getElementById("rDate").value = today;
+    // date reversing function to view date in format of (dd-mm-yyyy)
+    
+    function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
+}
+
+
+    //end
+</script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+body{
+    background: gray;
+    text-align: center;
+}
+
+.table-1{
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.item{
+    list-style: none;
+}
+
+
+th, td {
+    padding: 5px;
+}
+
+tbody{
+    background-color: #52514f;
+}
+
+
+#del-btn-a a{
+    text-decoration: none;
+    background-color: #91162a;
+    color: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px 
+}
+
+#del-btn-b{
+    border-radius: 25px;
+    padding: 5px;
+}
+
+#del-btn-b a{
+    text-decoration: none;
+    background-color: #27a351;
+    color: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px 12px;
+}

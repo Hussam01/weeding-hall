@@ -1,0 +1,155 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Changa', sans-serif;
+    font-weight: 600;  
+    
+    
+}
+
+body{
+    min-height: calc(100vh - 40px);
+}
+
+label, .s-btn{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.sec-0 a:hover{
+    color: rgba(54, 247, 182, 0.548);
+    
+}
+
+.sec-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.navLinks a{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: none;
+    transition: 2s;
+    
+}
+
+.navLinks a:hover{
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+}
+
+.header{
+    padding: 30px;
+    color: white;
+}
+
+
+.rForm{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.rForm input{
+    border-radius: 5px;
+   
+}
+
+.rForm label{
+    text-align: center;
+}
+
+.s-btn{
+    margin-top: 21px;
+}
+
+
+.resForm{
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+   
+    
+}
+
+.sec-0{
+    background-image: url("assets/beach-resort.jpg");
+    background-size: cover;
+    background-position: center center; 
+
+}
+
+
+
+
+.imgCar{
+   
+    height: 100%;
+    opacity: 0.8;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 3px 10px 3px 20px;
+    transition: width 1s ease-in-out;
+    
+  }
+
+  .footer{
+      text-align: center;
+      background-color: darkgray;
+      font-weight: bold;
+      
+  }
+
+  .footer-2{
+    padding-bottom: 27px;
+    font-size: 20px;
+    text-align: center;
+    background-color: darkgray;
+    font-weight: bold;
+  }
+
+
+
+
+
+  @media only screen and (min-width: 600px) {
+    .resForm {
+        margin: 20px 200px;
+    }
+  }
+  
